@@ -30,6 +30,12 @@ body, html {
   margin-bottom: 2%;
   margin-top: 2%;
   color: #FEF2BF;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+#level-title:hover{
+  scale: 1.05;
 }
 
 .game-over {

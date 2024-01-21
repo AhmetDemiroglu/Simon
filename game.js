@@ -53,7 +53,7 @@ document.getElementsByClassName("btn")[i].addEventListener("click", function () 
 
 let started = true
 
-document.addEventListener("keypress", function(e) {
+document.getElementById("level-title").addEventListener("click", function() {
 if(started){
 nextSequence();
 started = false}
@@ -72,7 +72,7 @@ else {
     body.classList.add("game-over");
     setTimeout(function(){
     body.classList.remove("game-over");}, 200);
-    document.getElementById("level-title").innerHTML = "Oyun Sona Erdi! <br> Yeniden başlamak için bir tuşa basın!";
+    document.getElementById("level-title").innerHTML = "Oyun Sona Erdi! <br> Yeniden başlamak buraya tıkla!";
     startOver();
     }
 }
