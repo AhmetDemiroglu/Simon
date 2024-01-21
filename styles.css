@@ -1,0 +1,132 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  background: linear-gradient(#030637, #3C0753, #720455);
+  animation: gradient 1s ease infinite;
+  height: 100%;
+  width: 100%;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  margin:  4%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  color: #FEF2BF;
+}
+
+.game-over {
+  background: red;
+  opacity: 0.75;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 15px;
+  display: inline-block;
+  height: 185px;
+  width: 185px;
+  border: 8px solid black;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* --- */
+ 
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+}
+.toggler{
+  cursor: pointer;
+  text-align: center;
+  transition: 0.6s;
+  height: fit-content;
+}
+
+.sosyalmedya{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+  margin: 5px;
+  padding: 0;
+  width: 50%;
+  float: right;
+  background-color: #fff6e750;
+
+}
+
+ul>li{
+  cursor: pointer;
+  height: 2rem;
+  text-align: center;
+  transition: 0.4s;
+}
+
+
+ul>li:hover{
+  background-color: #9198e585;
+}
+
+.fa-brands, .fa-envelope{
+  font-size: 1.5rem;
+  color: white;
+  height: 80%;
+  margin-top: 5px;
+  transition: 0.6s;
+}
+
+.fa-brands:hover{scale: 1.15;}
+.fa-envelope:hover{scale: 1.15;}
+
+.active{
+  background-color: #9198e585;
+  border-radius: 10px;
+  padding: 5px;
+}
